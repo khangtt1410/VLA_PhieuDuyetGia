@@ -82,6 +82,7 @@
       <DependentUpon>DBContext.dbml</DependentUpon>
     </Compile>
     <Compile Include="Entities\clsPhieuDuyetGia.vb" />
+    <Compile Include="Entities\clsPhieuDuyetGia_ChiTiet.vb" />
     <Compile Include="frmPhieuDuyetGia.Designer.vb">
       <DependentUpon>frmPhieuDuyetGia.vb</DependentUpon>
     </Compile>
