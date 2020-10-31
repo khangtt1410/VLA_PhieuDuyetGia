@@ -6,6 +6,48 @@ PRJ_PhieuDuyetGia_VLA
 </name>
 </assembly>
 <members>
-
+<member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnThemMoi_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Chuyển trang thêm mới/ sửa đổi
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.frmPhieuDuyetGia_Load(System.Object,System.EventArgs)">
+	<summary>
+ Hàm thực hiện load trang. Hiển thị danh sách phiếu duyệt giá lên grid
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.grvPhieuDuyetGia_FocusedRowChanged(System.Object,DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs)">
+	<summary>
+ Hàm hiển thị chi tiết danh sách đơn hàng trong phiếu duyệt giá
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.repCheckKyNhay_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ Hàm xử lý sự kiện ký nháy của phòng tài chính kế toán
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnNapLai_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Hàm xử lý sự kiện F5: làm mới trang
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnXoa_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Hàm xử lý sự kiện xóa dữ liệu
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member>
 </members>
 </doc>

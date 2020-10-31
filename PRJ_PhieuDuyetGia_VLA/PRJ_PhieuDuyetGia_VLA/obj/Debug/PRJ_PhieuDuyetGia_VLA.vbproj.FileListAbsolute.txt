@@ -14,3 +14,13 @@ D:\PROJECT\VLA\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDu
 D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.exe
 D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.xml
 D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.pdb
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\bin\Debug\PRJ_PhieuDuyetGia_VLA.exe.config
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.resources
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.resources
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.Resources.resources
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.vbproj.GenerateResource.Cache
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Debug\PRJ_PhieuDuyetGia_VLA.exe.licenses
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\bin\Debug\PRJ_PhieuDuyetGia_VLA.exe
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\bin\Debug\PRJ_PhieuDuyetGia_VLA.pdb
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\bin\Debug\PRJ_PhieuDuyetGia_VLA.xml

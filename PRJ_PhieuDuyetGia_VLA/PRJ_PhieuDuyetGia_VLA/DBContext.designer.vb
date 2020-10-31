@@ -94,6 +94,8 @@ Partial Public Class SX_PhieuDuyetGia
 	
 	Private _GhiChu As String
 	
+	Private _TrangThaiDuyet As System.Nullable(Of Byte)
+	
 	Public Sub New()
 		MyBase.New
 	End Sub
@@ -217,6 +219,18 @@ Partial Public Class SX_PhieuDuyetGia
 			End If
 		End Set
 	End Property
+	
+	<Column(Storage:="_TrangThaiDuyet", DbType:="TinyInt")>  _
+	Public Property TrangThaiDuyet() As System.Nullable(Of Byte)
+		Get
+			Return Me._TrangThaiDuyet
+		End Get
+		Set
+			If (Me._TrangThaiDuyet.Equals(value) = false) Then
+				Me._TrangThaiDuyet = value
+			End If
+		End Set
+	End Property
 End Class
 
 <Table(Name:="dbo.SX_PhieuDuyetGia_ChiTiet")>  _
@@ -230,13 +244,13 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 	
 	Private _TrangThai As System.Nullable(Of Boolean)
 	
-	Private _CreatedOn As String
+	Private _CreatedOn As System.Nullable(Of Date)
 	
-	Private _CreatedBy As String
+	Private _CreatedBy As System.Nullable(Of Integer)
 	
-	Private _EditedOn As String
+	Private _EditedOn As System.Nullable(Of Date)
 	
-	Private _EditedBy As String
+	Private _EditedBy As System.Nullable(Of Integer)
 	
 	Private _SoDonHang As String
 	
@@ -244,7 +258,7 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 	
 	Private _TenSanPham As String
 	
-	Private _SoLuong As String
+	Private _SoLuong As System.Nullable(Of Integer)
 	
 	Private _QuyCachSanPham As String
 	
@@ -252,15 +266,15 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 	
 	Private _GiayBia As String
 	
-	Private _LaiDinhMuc As String
+	Private _LaiDinhMuc As System.Nullable(Of Double)
 	
-	Private _DonGiaTinh As String
+	Private _DonGiaTinh As System.Nullable(Of Double)
 	
 	Public Sub New()
 		MyBase.New
 	End Sub
 	
-	<Column(Storage:="_ID", DbType:="NChar(10)")>  _
+	<Column(Storage:="_ID", DbType:="NVarChar(50)")>  _
 	Public Property ID() As String
 		Get
 			Return Me._ID
@@ -272,7 +286,7 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_IDPhieuDuyetGia", DbType:="NChar(10)")>  _
+	<Column(Storage:="_IDPhieuDuyetGia", DbType:="NVarChar(50)")>  _
 	Public Property IDPhieuDuyetGia() As String
 		Get
 			Return Me._IDPhieuDuyetGia
@@ -308,55 +322,55 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_CreatedOn", DbType:="NChar(10)")>  _
-	Public Property CreatedOn() As String
+	<Column(Storage:="_CreatedOn", DbType:="DateTime")>  _
+	Public Property CreatedOn() As System.Nullable(Of Date)
 		Get
 			Return Me._CreatedOn
 		End Get
 		Set
-			If (String.Equals(Me._CreatedOn, value) = false) Then
+			If (Me._CreatedOn.Equals(value) = false) Then
 				Me._CreatedOn = value
 			End If
 		End Set
 	End Property
 	
-	<Column(Storage:="_CreatedBy", DbType:="NChar(10)")>  _
-	Public Property CreatedBy() As String
+	<Column(Storage:="_CreatedBy", DbType:="Int")>  _
+	Public Property CreatedBy() As System.Nullable(Of Integer)
 		Get
 			Return Me._CreatedBy
 		End Get
 		Set
-			If (String.Equals(Me._CreatedBy, value) = false) Then
+			If (Me._CreatedBy.Equals(value) = false) Then
 				Me._CreatedBy = value
 			End If
 		End Set
 	End Property
 	
-	<Column(Storage:="_EditedOn", DbType:="NChar(10)")>  _
-	Public Property EditedOn() As String
+	<Column(Storage:="_EditedOn", DbType:="DateTime")>  _
+	Public Property EditedOn() As System.Nullable(Of Date)
 		Get
 			Return Me._EditedOn
 		End Get
 		Set
-			If (String.Equals(Me._EditedOn, value) = false) Then
+			If (Me._EditedOn.Equals(value) = false) Then
 				Me._EditedOn = value
 			End If
 		End Set
 	End Property
 	
-	<Column(Storage:="_EditedBy", DbType:="NChar(10)")>  _
-	Public Property EditedBy() As String
+	<Column(Storage:="_EditedBy", DbType:="Int")>  _
+	Public Property EditedBy() As System.Nullable(Of Integer)
 		Get
 			Return Me._EditedBy
 		End Get
 		Set
-			If (String.Equals(Me._EditedBy, value) = false) Then
+			If (Me._EditedBy.Equals(value) = false) Then
 				Me._EditedBy = value
 			End If
 		End Set
 	End Property
 	
-	<Column(Storage:="_SoDonHang", DbType:="NChar(10)")>  _
+	<Column(Storage:="_SoDonHang", DbType:="NVarChar(50)")>  _
 	Public Property SoDonHang() As String
 		Get
 			Return Me._SoDonHang
@@ -368,7 +382,7 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_TenDonVi", DbType:="NChar(10)")>  _
+	<Column(Storage:="_TenDonVi", DbType:="NVarChar(500)")>  _
 	Public Property TenDonVi() As String
 		Get
 			Return Me._TenDonVi
@@ -380,7 +394,7 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_TenSanPham", DbType:="NChar(10)")>  _
+	<Column(Storage:="_TenSanPham", DbType:="NVarChar(250)")>  _
 	Public Property TenSanPham() As String
 		Get
 			Return Me._TenSanPham
@@ -392,19 +406,19 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_SoLuong", DbType:="NChar(10)")>  _
-	Public Property SoLuong() As String
+	<Column(Storage:="_SoLuong", DbType:="Int")>  _
+	Public Property SoLuong() As System.Nullable(Of Integer)
 		Get
 			Return Me._SoLuong
 		End Get
 		Set
-			If (String.Equals(Me._SoLuong, value) = false) Then
+			If (Me._SoLuong.Equals(value) = false) Then
 				Me._SoLuong = value
 			End If
 		End Set
 	End Property
 	
-	<Column(Storage:="_QuyCachSanPham", DbType:="NChar(10)")>  _
+	<Column(Storage:="_QuyCachSanPham", DbType:="NVarChar(250)")>  _
 	Public Property QuyCachSanPham() As String
 		Get
 			Return Me._QuyCachSanPham
@@ -416,7 +430,7 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_GiayRuot", DbType:="NChar(10)")>  _
+	<Column(Storage:="_GiayRuot", DbType:="NVarChar(10)")>  _
 	Public Property GiayRuot() As String
 		Get
 			Return Me._GiayRuot
@@ -428,7 +442,7 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_GiayBia", DbType:="NChar(10)")>  _
+	<Column(Storage:="_GiayBia", DbType:="NVarChar(50)")>  _
 	Public Property GiayBia() As String
 		Get
 			Return Me._GiayBia
@@ -440,25 +454,25 @@ Partial Public Class SX_PhieuDuyetGia_ChiTiet
 		End Set
 	End Property
 	
-	<Column(Storage:="_LaiDinhMuc", DbType:="NChar(10)")>  _
-	Public Property LaiDinhMuc() As String
+	<Column(Storage:="_LaiDinhMuc", DbType:="Float")>  _
+	Public Property LaiDinhMuc() As System.Nullable(Of Double)
 		Get
 			Return Me._LaiDinhMuc
 		End Get
 		Set
-			If (String.Equals(Me._LaiDinhMuc, value) = false) Then
+			If (Me._LaiDinhMuc.Equals(value) = false) Then
 				Me._LaiDinhMuc = value
 			End If
 		End Set
 	End Property
 	
-	<Column(Storage:="_DonGiaTinh", DbType:="NChar(10)")>  _
-	Public Property DonGiaTinh() As String
+	<Column(Storage:="_DonGiaTinh", DbType:="Float")>  _
+	Public Property DonGiaTinh() As System.Nullable(Of Double)
 		Get
 			Return Me._DonGiaTinh
 		End Get
 		Set
-			If (String.Equals(Me._DonGiaTinh, value) = false) Then
+			If (Me._DonGiaTinh.Equals(value) = false) Then
 				Me._DonGiaTinh = value
 			End If
 		End Set
