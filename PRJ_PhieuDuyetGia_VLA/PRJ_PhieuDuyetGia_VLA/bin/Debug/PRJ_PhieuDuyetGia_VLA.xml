@@ -6,9 +6,131 @@ PRJ_PhieuDuyetGia_VLA
 </name>
 </assembly>
 <members>
-<member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnThemMoi_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+<member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.frmPhieuDuyetGia_CapNhat_Load(System.Object,System.EventArgs)">
+	<summary>
+ Hàm xử lý sự kiện load trang cập nhật
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.btnDong_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Hàm xử lý sự kiện đóng
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.grvThongTinChiTiet_InvalidRowException(System.Object,DevExpress.XtraGrid.Views.Base.InvalidRowExceptionEventArgs)">
+	<summary>
+ Hàm xử lý khi hàng có lỗi xảy ra, người dùng k thể chuyển xuống dòng khác
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.grvThongTinChiTiet_ValidateRow(System.Object,DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs)">
+	<summary>
+ Hàm xử lý sự kiện kiểm tra tính hợp lệ của hàng
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.grdThongTinChiTiet_ProcessGridKey(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Hàm xử lý xóa hàng trong gridview
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.btnGhiVaDong_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Hàm xử lý ghi và đóng
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.SaveData">
+	<summary>
+ Hàm xử lý lưu dữ liệu
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.CloseForm">
+	<summary>
+ Hàm xử lý đóng form
+ </summary>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.btnGhiVaIn_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Hàm xử lý sự kiện ghi và in
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.frmPhieuDuyetGia_CapNhat_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Hàm xử lý sự kiện của các phím tắt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.txtSoPhieu_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Hàm xử lý kiểm tra tính hợp lệ của trường số phiếu
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.txtTenPhieu_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Hàm xử lý ngoại lệ cho tên phiếu
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.dteNgayTao_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Hàm xử lý ngoại lệ cho ngày lập phiếu
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.CheckValid">
+	<summary>
+ Hàm xử lý validate trước khi lưu
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.rptxtSoDonHang_Leave(System.Object,System.EventArgs)">
+	<summary>
+ Hàm xử lý chọn sản phẩm từ đơn đặt hàng
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia_CapNhat.grvThongTinChiTiet_ShowingEditor(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Hàm kiểm tra trạng thái duyệt trước khi sửa đổi thông tin. Nếu đã duyệt rồi thì không cho sửa
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnThemMoi_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
 	<summary>
  Chuyển trang thêm mới/ sửa đổi
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnSuaDoi_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Sửa đổi phiếu duyệt giá
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnSaoChep_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Sao chép phiếu duyệt giá
  </summary>
 	<param name="sender"></param>
 	<param name="e"></param>
@@ -16,6 +138,13 @@ PRJ_PhieuDuyetGia_VLA
 </member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.frmPhieuDuyetGia_Load(System.Object,System.EventArgs)">
 	<summary>
  Hàm thực hiện load trang. Hiển thị danh sách phiếu duyệt giá lên grid
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnNapLai_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Hàm xử lý sự kiện F5: làm mới trang
  </summary>
 	<param name="sender"></param>
 	<param name="e"></param>
@@ -34,9 +163,9 @@ PRJ_PhieuDuyetGia_VLA
 	<param name="sender"></param>
 	<param name="e"></param>
 	<remarks></remarks>
-</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnNapLai_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.repCheckTrangThaiDuyet_CheckedChanged(System.Object,System.EventArgs)">
 	<summary>
- Hàm xử lý sự kiện F5: làm mới trang
+ CHỨC NĂNG NÀY HIỆN CHỈ CÓ TRÊN MOBILE - Sự kiện giám đốc phê duyệt giá sau khi bên tài chính kế toán đã ký nháy
  </summary>
 	<param name="sender"></param>
 	<param name="e"></param>
@@ -44,6 +173,34 @@ PRJ_PhieuDuyetGia_VLA
 </member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnXoa_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
 	<summary>
  Hàm xử lý sự kiện xóa dữ liệu
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnXuatPhieuDuyetGia_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Xuất dữ liệu phiếu duyệt giá
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnXuatPhieuDuyetGiaCT_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Xuất dữ liệu phiếu duyệt giá chi tiết
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.frmPhieuDuyetGia_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Xử lý phím tắt
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:PRJ_PhieuDuyetGia_VLA.frmPhieuDuyetGia.btnDong_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+	<summary>
+ Đóng form
  </summary>
 	<param name="sender"></param>
 	<param name="e"></param>

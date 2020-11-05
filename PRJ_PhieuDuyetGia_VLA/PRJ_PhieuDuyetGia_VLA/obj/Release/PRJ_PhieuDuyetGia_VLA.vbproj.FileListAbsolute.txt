@@ -24,3 +24,4 @@ D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Rel
 D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Release\PRJ_PhieuDuyetGia_VLA.exe
 D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Release\PRJ_PhieuDuyetGia_VLA.xml
 D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Release\PRJ_PhieuDuyetGia_VLA.pdb
+D:\PROJECT\VLA_PhieuDuyetGia\PRJ_PhieuDuyetGia_VLA\PRJ_PhieuDuyetGia_VLA\obj\Release\PRJ_PhieuDuyetGia_VLA.frmChooseDonHang_PhieuDuyetGia.resources

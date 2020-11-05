@@ -2,7 +2,7 @@
     Public _ID As String
     Public _SoPhieu As String
     Public _TenPhieu As String
-    Public _TrangThai As Boolean
+    Public _InUsed As Boolean
     Public _CreatedOn As Date
     Public _CreatedName As String
     Public _CreatedBy As Integer
@@ -10,8 +10,8 @@
     Public _EditedName As String
     Public _EditedBy As Integer
     Public _KyNhay As Boolean
-    Public _TrangThaiDuyet As Byte
-    Public _TrangThaiDuyetBln As Boolean
+    Public _TrangThaiDuyet As Boolean
+    Public _GhiChu As String
 
     Public Sub New()
         MyBase.New()
@@ -41,12 +41,12 @@
             _TenPhieu = value
         End Set
     End Property
-    Public Property TrangThai() As Boolean
+    Public Property InUsed() As Boolean
         Get
-            Return _TrangThai
+            Return _InUsed
         End Get
         Set(ByVal value As Boolean)
-            _TrangThai = value
+            _InUsed = value
         End Set
     End Property
     Public Property CreatedOn() As Date
@@ -105,20 +105,23 @@
             _KyNhay = value
         End Set
     End Property
-    Public Property TrangThaiDuyetBln() As Boolean
-        Get
-            Return _TrangThaiDuyetBln
-        End Get
-        Set(ByVal value As Boolean)
-            _TrangThaiDuyetBln = value
-        End Set
-    End Property
-    Public Property TrangThaiDuyet() As Byte
+    Public Property TrangThaiDuyet() As Boolean
         Get
             Return _TrangThaiDuyet
         End Get
-        Set(ByVal value As Byte)
+        Set(ByVal value As Boolean)
             _TrangThaiDuyet = value
+        End Set
+    End Property
+    Public Property GhiChu() As String
+        Get
+            Return _GhiChu
+        End Get
+        Set(ByVal value As String)
+            If _GhiChu = Value Then
+                Return
+            End If
+            _GhiChu = Value
         End Set
     End Property
 End Class

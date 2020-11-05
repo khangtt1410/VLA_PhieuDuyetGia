@@ -6,8 +6,8 @@
     Public _TenSanPham As String
     Public _QuyCachSanPham As String
     Public _SoLuong As Integer
-    Public _GiayRuot As String
-    Public _GiayBia As String
+    Public _GiayRuot As Double
+    Public _GiayBia As Double
     Public _LaiDinhMuc As Double
     Public _DonGiaTinh As Double
     Public _CreatedOn As Date?
@@ -16,8 +16,13 @@
     Public _EditedOn As Date?
     Public _EditedBy As Integer?
     Public _EditedName As String
-    Public _TrangThai As Boolean
-    Public _MaDonViSuDung As Integer
+    Public _InUsed As Boolean
+    Public _TrangThaiDuyet As Boolean
+    Public _TrangThaiIn As Boolean
+    Public _IsChoose As Boolean
+    Public _IDDonHangChiTiet As String
+    Public _DonGiaChiDao As Double
+    Public _DoKhoTaiLieu As Integer
 
     Public Sub New()
         MyBase.New()
@@ -79,19 +84,19 @@
             _SoLuong = value
         End Set
     End Property
-    Public Property GiayRuot() As String
+    Public Property GiayRuot() As Double
         Get
             Return _GiayRuot
         End Get
-        Set(ByVal value As String)
+        Set(ByVal value As Double)
             _GiayRuot = value
         End Set
     End Property
-    Public Property GiayBia() As String
+    Public Property GiayBia() As Double
         Get
             Return _GiayBia
         End Get
-        Set(ByVal value As String)
+        Set(ByVal value As Double)
             _GiayBia = value
         End Set
     End Property
@@ -111,12 +116,12 @@
             _DonGiaTinh = value
         End Set
     End Property
-    Public Property TrangThai() As Boolean
+    Public Property InUsed() As Boolean
         Get
-            Return _TrangThai
+            Return _InUsed
         End Get
         Set(ByVal value As Boolean)
-            _TrangThai = value
+            _InUsed = value
         End Set
     End Property
     Public Property CreatedOn() As Date?
@@ -167,12 +172,70 @@
             _EditedName = value
         End Set
     End Property
-    Public Property MaDonViSuDung() As Boolean
+    Public Property TrangThaiIn() As Boolean
         Get
-            Return _MaDonViSuDung
+            Return _TrangThaiIn
         End Get
         Set(ByVal value As Boolean)
-            _MaDonViSuDung = value
+            If _TrangThaiIn = Value Then
+                Return
+            End If
+            _TrangThaiIn = Value
+        End Set
+    End Property
+    Public Property TrangThaiDuyet() As Boolean
+        Get
+            Return _TrangThaiDuyet
+        End Get
+        Set(ByVal value As Boolean)
+            If _TrangThaiDuyet = Value Then
+                Return
+            End If
+            _TrangThaiDuyet = Value
+        End Set
+    End Property
+    Public Property IsChoose() As Boolean
+        Get
+            Return _IsChoose
+        End Get
+        Set(ByVal value As Boolean)
+            If _IsChoose = Value Then
+                Return
+            End If
+            _IsChoose = Value
+        End Set
+    End Property
+    Public Property IDDonHangChiTiet() As String
+        Get
+            Return _IDDonHangChiTiet
+        End Get
+        Set(ByVal value As String)
+            If _IDDonHangChiTiet = Value Then
+                Return
+            End If
+            _IDDonHangChiTiet = Value
+        End Set
+    End Property
+    Public Property DonGiaChiDao() As Double
+        Get
+            Return _DonGiaChiDao
+        End Get
+        Set(ByVal value As Double)
+            If _DonGiaChiDao = Value Then
+                Return
+            End If
+            _DonGiaChiDao = Value
+        End Set
+    End Property
+    Public Property DoKhoTaiLieu() As Integer
+        Get
+            Return _DoKhoTaiLieu
+        End Get
+        Set(ByVal value As Integer)
+            If _DoKhoTaiLieu = Value Then
+                Return
+            End If
+            _DoKhoTaiLieu = Value
         End Set
     End Property
 End Class
